@@ -4,7 +4,7 @@ from Modifiers import *
 
 # load your API key and Arduino IP address into the json file 'setings.js'
 # and specify the absolute path if running from Cron
-f = open('/root/dev/jsonDuino/logging_clients/creds.js', 'r')
+f = open('/root/dev/jsonDuino/logging_clients/settings.js', 'r')
 jsonObj = json.loads(f.read())
 apikey = jsonObj['thingspeak_apikey']
 arduino_ip = jsonObj['arduino_ip']
@@ -12,7 +12,7 @@ arduino = httplib.HTTPConnection(arduino_ip)
 
 
 try:
-	arduino.request("GET","/a0")
+	arduino.request("GET","/json")
 	response = arduino.getresponse()
 	print "Arduino response:" , response.status, response.reason
 	jsonObj = json.loads(response.read())
