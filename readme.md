@@ -4,7 +4,7 @@ jsonDuino is firmware for your Arduino that exposes its IO values as JSON. Also 
 are some data logging clients (that log to Thingspeak and Pachube) as well as jQuery
 based user interfaces for viewing and controlling the Arduino.
 
-### Input Usage (GET)
+### Read Pins (GET)
 - http://yourhost/json --> returns JSON
 - http://yourhost      --> returns HTML
 - http://yourhost/form --> HTML form
@@ -14,7 +14,7 @@ based user interfaces for viewing and controlling the Arduino.
 - http://yourhost/0    --> returns JSON of digital pin value
 - http://yourhost/a0   --> returns JSON value of analog pin value
 
-### Output Usage (POST) 
+### Write Pins (POST) 
 - http://yourhost/0  --> POST json value to set the digital pin
 - http://yourhost/a0 --> POST json value to set the analog pin
 
