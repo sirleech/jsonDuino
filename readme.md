@@ -5,18 +5,18 @@ are some data logging clients (that log to Thingspeak and Pachube) as well as jQ
 based user interfaces for viewing and controlling the Arduino.
 
 ### Input Usage (GET)
-http://yourhost/json --> returns JSON
-http://yourhost      --> returns HTML
-http://yourhost/form --> HTML form
+- http://yourhost/json --> returns JSON
+- http://yourhost      --> returns HTML
+- http://yourhost/form --> HTML form
 
-*Below Usages are to dos...*
+*Below usages are to dos...*
 
-http://yourhost/0    --> returns JSON of digital pin value
-http://yourhost/a0   --> returns JSON value of analog pin value
+- http://yourhost/0    --> returns JSON of digital pin value
+- http://yourhost/a0   --> returns JSON value of analog pin value
 
 ### Output Usage (POST) 
-http://yourhost/0  --> POST json value to set the digital pin
-http://yourhost/a0 --> POST json value to set the analog pin
+- http://yourhost/0  --> POST json value to set the digital pin
+- http://yourhost/a0 --> POST json value to set the analog pin
 
 #### JSON for POSTing
 {"value":"500"}    --> analog output/PWM output
