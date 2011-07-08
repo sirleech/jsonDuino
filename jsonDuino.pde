@@ -19,8 +19,7 @@
  * 
  */
 
-#include "SPI.h" // new include
-#include "avr/pgmspace.h" // new include
+#include "SPI.h"
 #include "Ethernet.h"
 // https://github.com/sirleech/Webduino
 #include "WebServer.h"
