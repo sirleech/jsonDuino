@@ -1,4 +1,4 @@
-# jsonDuino - An internet connected Arduino with a RESTful JSOn Interface
+# jsonDuino - An internet connected Arduino with a RESTful JSON Interface
 
 jsonDuino is firmware for your Arduino that exposes its IO values as JSON. Also provided
 are some data logging clients (that log to Thingspeak and Pachube) as well as jQuery
