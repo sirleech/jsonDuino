@@ -19,8 +19,8 @@ based user interfaces for viewing and controlling the Arduino.
 - http://yourhost/a0 --> POST json value to set the analog pin
 
 #### JSON for POSTing
-{"value":"500"}    --> analog output/PWM output
-{"value":"HIGH"}   --> digital output
+- `{"value":"500"}`    --> analog output/PWM output
+- `{"value":"HIGH"}`   --> digital output
 
 ## Dependencies
 - Webduino Library
