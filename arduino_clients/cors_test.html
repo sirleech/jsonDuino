@@ -5,15 +5,23 @@
    <title>jQuery demo</title>
  </head>
  <body>
+	<h2>Webduino Values Updated Every 3 Seconds</h2>
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
    <script>
+
+   arduinoUrl = 'http://ausbots.dyndns.org:41/json';
+   document.write("Arduino URL:" + arduinoUrl);
+	
    function refresh() {
-	$.getJSON('http://ausbots.dyndns.org:41/json', function(data) {
+	
+	$.getJSON(arduinoUrl, function(data) {
 	  var items = [];
 
 	  $.each(data, function(key, val) {
 	    items.push('<li id="' + key + '"> '+ key +":" + val + '</li>');
 	  });
+	
+	  $('.my-new-list').remove();	
 
 	  $('<ul/>', {
 	    'class': 'my-new-list',
