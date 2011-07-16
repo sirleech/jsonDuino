@@ -4,7 +4,7 @@ jsonDuino is firmware for your Arduino that exposes its IO values as JSON. Also 
 are some data logging clients (that log to Thingspeak and Pachube) as well as jQuery
 based user interfaces for viewing and controlling the Arduino.
 
-### Online Demos
+## Online Demos
 - Arduino as webserver:
   http://ausbots.dyndns.org:41/
 
@@ -16,6 +16,8 @@ http://ausbots.dyndns.org:81/arduino_clients/cors_test.html
 
 - Logging/Graph
 http://ausbots.dyndns.org:81/thingspeak_clients/viewFeed.php?feed=826&hours=.5
+
+## Service Interface (Draft)
 
 ### Read Pins (GET)
 - http://yourhost/json --> returns JSON
